@@ -2,8 +2,8 @@
 name = "offchain-bot"
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
-description = "Solana DEX arbitrage bot with offchain execution and Jito MEV protection"
+authors = [""]
+description = "Solana DEX arbitrage bot"
 
 [dependencies]
 # Core dependencies
