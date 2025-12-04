@@ -1,0 +1,57 @@
+[database]
+url = ""
+max_connections = 10
+timeout_seconds = 30
+
+[memory_store]
+enabled = true
+max_opportunities = 10000
+max_executions = 50000
+cleanup_interval_seconds = 300
+data_retention_days = 7
+
+[solana]
+rpc_url = ""
+ws_url = "wss://"
+commitment = "confirmed"
+jito_url = ""
+jito_auth_header = ""
+
+[dex.raydium]
+base_url = "https://api.raydium.io"
+api_key = ""
+timeout_seconds = 5
+rate_limit = 200
+
+[dex.meteora]
+base_url = "https://api.meteora.ag"
+api_key = ""
+timeout_seconds = 5
+rate_limit = 200
+
+[dex.whirlpool]
+base_url = "https://api.whirlpool.xyz"
+api_key = ""
+timeout_seconds = 5
+rate_limit = 200
+
+[dex.pump]
+base_url = "https://api.pump.fun"
+api_key = ""
+timeout_seconds = 5
+rate_limit = 200
+
+[arbitrage]
+min_profit_threshold = 0.003
+max_slippage = 0.005
+gas_price_multiplier = 1.05
+max_concurrent_opportunities = 20
+execution_timeout_seconds = 15
+
+[logging]
+level = "info"
+file_path = "logs/arbitrage_bot.log"
+max_file_size = 104857600
+max_files = 10
+
+environment = "development"
